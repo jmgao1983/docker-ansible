@@ -3,8 +3,6 @@
 
 FROM alpine:3.8
 
-COPY ansible.cfg /etc/ansible/
-
 RUN \ 
     echo "===> Adding Python runtime..."  && \
     apk --update add python py-pip openssl ca-certificates    && \

@@ -17,7 +17,7 @@ RUN \
     \
     echo "===> Installing handy tools..."          && \
     pip install --upgrade pycrypto                 && \
-    apk --update add sshpass openssh-client rsync  && \
+    apk --update add bash openssh-client rsync     && \
     \
     \
     echo "===> Removing package list..."  && \
